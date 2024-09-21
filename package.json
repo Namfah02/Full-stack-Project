@@ -1,0 +1,22 @@
+{
+  "name": "high-street-gym",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "scripts": {
+    "backend": "npm run -w backend start",
+    "frontend": "npm run -w frontend dev"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "^4.2.1",
+    "react-router-dom": "^6.22.2",
+    "vite": "^5.1.4",
+    "vue": "^3.4.21"
+  }
+}

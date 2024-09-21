@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE class-upload [
+    <!ELEMENT class-upload (classes)>
+    <!ATTLIST class-upload operation (insert|update) "insert">
+    <!ELEMENT classes (class+)>
+    <!ELEMENT class (id?, date, time, activity, trainer, location)>
+    <!ELEMENT id (#PCDATA)>
+    <!ELEMENT date (#PCDATA)>
+    <!ELEMENT time (#PCDATA)>
+    <!ELEMENT activity (#PCDATA)>
+    <!ELEMENT trainer (#PCDATA)>
+    <!ELEMENT location (#PCDATA)>
+]>
+
+<class-upload operation="insert">
+    <classes>
+        <class>
+            <date>2024-06-12</date>
+            <time>10:00:00</time>
+            <activity>Boxing</activity>
+            <trainer>Jenny Doe</trainer>
+            <location>Toowong</location>
+        </class>
+        <class>
+            <date>2024-06-12</date>
+            <time>10:00:00</time>
+            <activity>Boxing</activity>
+            <trainer>Alex Wang</trainer>
+            <location>Coorparoo</location>
+        </class>
+        <class>
+            <date>2024-06-12</date>
+            <time>10:00:00</time>
+            <activity>Boxing</activity>
+            <trainer>Marry King</trainer>
+            <location>Toowong</location>
+        </class>
+    </classes>
+</class-upload>
+
+<!-- Update version  -->
+<!-- <class-upload operation="update">
+    <classes>
+        <class>
+            <id>2</id>
+            <date>2024-06-10</date>
+            <time>15:30:00</time>
+            <activity>Zumba</activity>
+            <trainer>Marry King</trainer>
+            <location>Coorparoo</location>
+        </class>
+        <class>
+            <id>3</id>
+            <date>2024-06-10</date>
+            <time>15:30:00</time>
+            <activity>Zumba</activity>
+            <trainer>Alex Wang</trainer>
+            <location>Coorparoo</location>
+        </class>
+        <class>
+            <id>4</id>
+            <date>2024-06-10</date>
+            <time>15:30:00</time>
+            <activity>Zumba</activity>
+            <trainer>Jenny Doe</trainer>
+            <location>Toowong</location>
+        </class>
+        <class>
+            <id>5</id>
+            <date>2024-06-10</date>
+            <time>15:30:00</time>
+            <activity>Zumba</activity>
+            <trainer>Irina Kelvin</trainer>
+            <location>Toowong</location>
+        </class>
+    </classes>
+</class-upload>  -->

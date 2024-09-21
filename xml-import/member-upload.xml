@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE user-upload [
+    <!ELEMENT user-upload (users)>
+    <!ATTLIST user-upload operation (insert) "insert">
+    <!ELEMENT users (user+)>
+    <!ELEMENT user (firstName, lastName, role, email, password, phone, address)>
+    <!ELEMENT firstName (#PCDATA)>
+    <!ELEMENT lastName (#PCDATA)>
+    <!ELEMENT role (#PCDATA)>
+    <!ELEMENT email (#PCDATA)>
+    <!ELEMENT password (#PCDATA)>
+    <!ELEMENT phone (#PCDATA)>
+    <!ELEMENT address (#PCDATA)>
+]>
+<user-upload operation="insert">
+    <users>
+        <user>
+            <firstName>Jessy</firstName>
+            <lastName>Johnson</lastName>
+            <role>member</role>
+            <email>jessy@johnson.com</email>
+            <password>abc123</password>
+            <phone>0412345678</phone>
+            <address>406/16 Anderson ST, Sydney, NSW 3000</address>
+        </user>
+        <user>
+            <firstName>Julie</firstName>
+            <lastName>Doe</lastName>
+            <role>member</role>
+            <email>julie@doe.com</email>
+            <password>abc123</password>
+            <phone>0411145678</phone>
+            <address>512 Kangaroo ST, South Brisbane, QLD 4100</address>
+        </user>
+    </users>
+</user-upload>
